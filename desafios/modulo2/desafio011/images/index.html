@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento vertical</title>
+    <title>Desafio 011 - Astronauta</title>
     <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
         #container{
-            background-image: url(images/target001.png);
+            position: relative;
+            
+            height: 96vh; 
+            
+            background-image: url(espaco.jpg);
             background-size: 100% 100%;
-
-            position: relative;/*padrao*/
-            height: 96vh;
-            padding: 10px;
-            background-color: purple;     
         }
         #content{
-            background-image: url(images/target001.png);
-            background-size: 100% 100%;
             position: absolute;
-            height: 200px;
-            width: 400px;
-            background-color: yellow;
-            
+            height: 200px; 
+            width: 200px;
+            background-image: url(astronauta.png);
+            background-size: 100% 100%;
+
             left: 50%;
             top: 50%;
 
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);                        
         }
     </style>
 </head>
@@ -36,6 +38,5 @@
 
         </article>
     </section>
-    
 </body>
 </html>
